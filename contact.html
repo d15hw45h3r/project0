@@ -3,14 +3,43 @@
   <head>
     <title>Contacts</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <style>
+          input[type=text], [type=number] {
+            margin: 30;
+            padding: 50;
+          }
+          button {
+            background-color: grey;
+            color: white;
+          }
+          button:hover {
+            background-color: white;
+            color: black;
+          }
+
+        </style>
+
   </head>
   <body>
-    <table class="col-3">
-      <th><a href="index.html">Home</a></th>
-      <th><a href="quiz.html">Quiz</a></th>
-      <th><a href="about.html">About me</a></th>
-      <th><a href="contact.html">Contacts</a></th>
-    </table>
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="pets.html">Pets</a></li>
+        <li class="breadcrumb-item"><a href="wild.html">Wild</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Contact</li>
+      </ol>
+    </nav>
+
     <p>This is a page with contacts</p>
+
+    <form>
+      <input name="name" type="text" placeholder="Name">
+      <input name="name" type="number" placeholder="Age">
+      <input name="name" type="text" placeholder="E-mail">
+    </form>
+    <button>Submit!</button>
+
   </body>
 </html>
